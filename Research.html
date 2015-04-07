@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" href="styles.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<title>Research-Dr.Feng Yu</title>
+<style>
+.navbar-brand{
+	padding-left:100px;
+}
+.navbar a:hover{
+	color:#03F;
+}
+.row{
+	padding-left:120px;
+	padding-top:55px;
+	padding-right:110px;
+	
+}
+.emailcolr{
+	color:#03F;
+}
+.hedcol{
+	color:#03F;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <a class="navbar-brand" href="Research.html">Research</a>
+    <a class="navbar-brand" href="publication.html">Publication</a>
+    <a class="navbar-brand" href="Lab.html">Lab</a>
+    <a class="navbar-brand" href="Teaching.html">Teaching</a>
+  </div>
+</nav>
+<div class="row">
+<div class="well">
+<div class="container">
+<h3 class="hedcol"><b>RESEARCH</b></h3>
+<div class="col-lg-1"></div>
+<div class="col-lg-10">
+<ul>
+<li><b>Correlated Sample Synopsis (CS2): A New Statistic Synopsis for Database Query Optimization.</b></li>
+<ul>
+<li>Proposed a novel synopsis, CS2, which retains the join relationships between relational tables in database, and precisely provides estimations for complex SQL queries including joins and selections. Empirically demonstrated using skewed data that CS2 requires much less storage space than any other state-of-the-art synopses and provides considerably more accurate estimation.</li>
+<li>Introduced a novel statistic estimator called "Reverse Estimator'' (RV Estimator) which conquered the bottleneck of other statistical estimators in the case when no simple random sampling is available. Proved both theoretically and empirically that the RV Estimator is unbiased for given join/select queries.</li>
+<li>Developed the paralleled algorithm to generate CS2 and implemented the automated query estimation system integrated with MySQL Database.</li></ul>
+<li><b>Sample Trace: Optimizing Analytical SQL Queries Using Intermediate Statistics.</b></li>
+<ul>
+<li>Proposed a new data structure called "Trace'' which recycles the intermediate information while database engine executes any query. The generated "Trace'' derives the exact query result size for ANY given logical query execution plan.</li>
+<li>Applied sampling theory in Trace to introduce "Sample Trace'' when extremely reduces space complexity and provides precise query result estimations. In addition, the associated Sample Trace estimator is proved both in theorem and experiments to be unbiased.</li>
+</ul>
+<li><b>A Performance Study of High Dimensional Histogram and Sample in Database Query Optimization Context.</b></li>
+<ul>
+<li>Built a high dimensional statistic model in which range queries and database space partitions are randomly simulated.</li>
+<li>Extended the 1-dimensional statistic procedure -- "random shuffling'' into higher dimensional scenarios.</li>
+<li>Derived the space cost of sample in high dimensional space for range queries and extend the state-of-the-art formula of 1-dimensional histogram space cost to 2-dimensional scenario.</li>
+</ul>
+<li><b>Cyber Security</b></li>
+<ul>
+<li>Co-developed the theoretical foundation of a set-theory based malware detection categorization methodology.</li>
+<li>Defined the foundation concepts in the feature selection procedure of intrusion detection system.</li>
+</ul>
+<li><b>Microarray in bioinformatics</b></li>
+<ul>
+<li>Cooperated in the broad-based review of state-of-the-art methodologies in microarray processing technology</li>
+<li>Summarized the commonly adopted clustering methods in microarray processing</li>
+</ul></ul>
+</div></div>
+<div class="container">
+<h3 class="hedcol"><b>Projects and Software</b></h3>
+<div class="col-lg-12">
+<ul>
+<li><b>CS2 Query Result Estimation System (CS2-QRES)</b></li>
+<ul>
+<li>Implemented the CS2 to work with MySQL database to provide query result estimation using CS2 synopsis. It requires only tiny sized space on disk and can produce query estimations quickly and is capable of easily extended to Big Data environment.</li>
+<li>Implementation of Tuple Graph Synopses for Relational Data Sets (TuG)</li>
+<li>Implemented the state-of-the-art TuG database clustering system which adopts BIRCH clustering, Count-Min sketch, CV Tree and etc., using Java and MySQL database. And solved the bottleneck of the large sized intermediate results transportation with SQL procedure and buffer pool.</li></ul>
+<li><b>Puppeteer: A CRM System for Cyber Security</b></li>
+<ul>
+<li>Implemented using PHP, Shell Script, and MySQL. Deployed on Linux to incorporate with date-to-day enterprise cyber security activities. Already adopted by IT Department of SIUC and in production with fully written project documentations. It centralizes the duties of team members of Information Security Team and responses of LAN Administrators on campus into one system. It also automatically generates emails and reports from data warehouse.</li></ul>
+<li><b>Opensource Private Cloud</b></li>
+<ul>
+<li>An opensource IaaS and private cloud constructed using OpenNebula Cloud OS from scratch. <br />Capable of virtualize Windows/Linux/BSD using KVM/VMWare driver on NFS. <br />It flexibly provides virtual machines for cyber security tests, data backups, and etc. In addition, Cianna Cloud saves power and costs for increasing needs of workstations in IT Department.</li>
+</ul></ul>
+</div></div>
+<div class="container">
+<h2 class="hedcol">Presentation</h2>
+<ol>
+<li>A Study of Statistics for Database Query Optimization: Histogram vs. Sample. Department of Computer Science, Southern Illinois University at Carbondale, IL, USA, 2008</li>
+<li>An Introduction to Modern Database Architecture. Department of Computer Science, Southern Illinois University at Carbondale, IL, USA, 2009</li>
+<li>Paralleled Image Processing using MPI. Department of Computer Science, Southern Illinois University at Carbondale, IL, USA, 2009</li>
+<li>Puppeteer: A Centralized CRM in IT Information Security. Department of Information Technology, Southern Illinois University at Carbondale, IL, USA, 2011</li>
+<li>Octopussy: An Open Source Log Management Solution. Department of Information Technology, Southern Illinois University at Carbondale, IL, USA, 2011</li>
+</div>
+</div></div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</body>
+</html>
